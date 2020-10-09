@@ -1,2 +1,0 @@
-nasm -f bin bootloader.asm -o bootloader.flp
-qemu-system-x86_64 bootloader.flp 
