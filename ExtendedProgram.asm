@@ -41,9 +41,8 @@ StartProtectedMode:
 
     call DetectCPUID
     call DetectLongMode
-    
+   
     call SetUpIdentityPaging
-
     call EditGDT
     jmp codeseg:Start64Bit
 
