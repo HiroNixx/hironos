@@ -1,8 +1,6 @@
-[org 0x7e00]
-
 jmp EnterProtectedMode
 
-%include "print.asm"
+;%include "print.asm"
 %include "gdt.asm"
 
 
@@ -47,6 +45,9 @@ StartProtectedMode:
     jmp codeseg:Start64Bit
 
 [bits 64]
+[extern _start]
+
+
 
 Start64Bit:
     mov edi, 0xb8000
